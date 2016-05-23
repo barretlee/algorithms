@@ -1,0 +1,17 @@
+console.log('<%- fileName %>:')
+// input start
+var input = require('../../../generator/index').getRandomNumbers();
+// input end
+console.log('> input: ' + input);
+
+
+// <%- fileName %>
+function <%- fileName %>(input) {
+  var ouput = [];
+  return input;
+}
+
+
+// output start
+console.log('> output:' + <%- fileName %>(input));
+// output end
