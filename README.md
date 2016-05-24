@@ -8,7 +8,7 @@ All algorithms writing with JavaScript in book '[Algorithms Fourth Edition](http
 Run `generator/create.js` to generate code template.
 
 ```bash
-# craete a file with `file.xtpl` at `chapter/chapter-1-xxx/1.2-xxx/test.js`
+# create a file with `file.xtpl` at `chapter/chapter-1-xxx/1.2-xxx/test.js`
 node generator/create 1.2/test
 
 # delete file `chapter/chapter-1-xxx/1.2-xxx/test.js` if exists
@@ -41,7 +41,7 @@ There are many functions in `genetator/index` for generating data. such as:
 
 ```javascript
 var input = require('./generator/index').getRandomNumbers();
-// -> [random numbers which length is default 15 between 0 to 1E5]
+// -> [random numbers which length is default 20 between 0 to 1E5]
 ```
 
 
