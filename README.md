@@ -1,6 +1,8 @@
 Algorithms in JavaScript
 ---
 
+**[Detail & Discusion (讨论和细节)](https://github.com/barretlee/algorithms/issues)**
+
 All algorithms writing with JavaScript in book '[Algorithms Fourth Edition](http://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X?ie=UTF8&keywords=Algorithms%20Fourth%20Edition&qid=1464068185&ref_=sr_1_1&sr=8-1)'.
 
 ### Usage
