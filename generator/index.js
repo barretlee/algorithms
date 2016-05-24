@@ -23,7 +23,7 @@ module.exports = {
   getRandomNumber: function(min, max) {
     min = min || MIN;
     max = max || MAX;
-    return Math.floor(Math.random() * max) + min;
+    return Math.floor(Math.random() * (max - min)) + min;
   },
   /**
    * product one random charactor at the scope of `string`.
@@ -206,10 +206,11 @@ module.exports = {
   },
   /**
    * get no-repeat data.
-   * @param {String|Array} 
+   * @param {String|Array}
    */
   noRepeat: function() {
     var ret = [], arr = [], arg = arguments[0];
+    arr = arg;
     if(typeof arg === 'string') {
       arr = arg.split('');
     }
