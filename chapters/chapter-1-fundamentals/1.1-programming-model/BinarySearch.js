@@ -28,7 +28,7 @@ function BinarySearch(input, key) {
     }
     return -1;
   }
-};
+}
 
 
 /* output start */
