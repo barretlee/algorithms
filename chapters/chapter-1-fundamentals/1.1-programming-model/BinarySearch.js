@@ -1,10 +1,10 @@
 console.log("BinarySearch:")
-// input start
+/* input start */
 var Generator = require('../../../generator/index');
 var input = Generator.getEscRandomNumbers(10);
 var index = Generator.getRandomNumber(0, input.length - 1);
 var key = input[index];
-// input end
+/* input end */
 console.log("> input: " + input + " (index: " + index + ", key: " + key + ")");
 
 
@@ -31,6 +31,6 @@ function BinarySearch(input, key) {
 };
 
 
-// output start
+/* output start */
 console.log("> output: " + BinarySearch(input, key));
-// output end
+/* output end */
