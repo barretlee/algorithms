@@ -1,13 +1,13 @@
-console.log('quicksort:')
+console.log('quicksortImprove:')
 /* input start */
 var input = require('../../../generator/index').getRandomNumbers(40);
 /* input end */
 console.log('> input: ' + input);
 
 
-// quicksort
+// quicksortImprove
 var delta = 5;
-function quicksort(input) {
+function quicksortImprove(input) {
 
   sort(0, input.length - 1);
   return input;
@@ -47,5 +47,5 @@ function quicksort(input) {
 
 
 /* output start */
-console.log('> output: ' + quicksort(input));
+console.log('> output: ' + quicksortImprove(input));
 /* output end */
