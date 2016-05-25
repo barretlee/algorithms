@@ -35,7 +35,7 @@ function <%- fileName %>(input) {
 
 
 /* output start */
-console.log('> output:' + <%- fileName %>(input));
+console.log('> output: ' + <%- fileName %>(input));
 /* output end */
 ```
 
