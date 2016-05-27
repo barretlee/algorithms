@@ -1,4 +1,4 @@
-console.log('headSort:')
+console.log('heapSort:')
 /* input start */
 var Generator = require('../../../generator/index');
 var Checker = require('../../../generator/checker');
@@ -9,8 +9,8 @@ input.unshift('');
 console.log('> input:  ' + input);
 
 
-// headSort
-function headSort(input) {
+// heapSort
+function heapSort(input) {
   return sort(input);
 
   function sort (arr){
@@ -39,7 +39,7 @@ function headSort(input) {
 
 
 /* output start */
-var output = headSort(input);
+var output = heapSort(input);
 console.log('> output: ' + output);
 // console.log('> binary head check: ' + Checker.binaryHeadChecker(output));
 /* output end */
