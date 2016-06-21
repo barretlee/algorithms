@@ -4,9 +4,9 @@
  * @license MIT
  */
 
-// Default maxinum number
+// Default maximum number
 var MAX = 1E5;
-// Default mininum number
+// Default minimum number
 var MIN = 0;
 // Default scope of string -> new RegExp("\w")
 var STRING = 'ABCDEDFHIJKLMNOPQRSTUVWXYZabcdedfhijklmnopqrstuvwxyz0123456789_';
@@ -16,8 +16,8 @@ var AMOUNT = 20;
 module.exports = {
   /**
    * product one random number between `min` and `max`.
-   * @param  {Number} min   mininum number
-   * @param  {Number} max   maxinum number
+   * @param  {Number} min   minimum number
+   * @param  {Number} max   maximum number
    * @return {Number} Random Number
    */
   getRandomNumber: function(min, max) {
@@ -36,8 +36,8 @@ module.exports = {
   },
   /**
    * product `amount` random numbers between `min` and `max`.
-   * @param  {Number} min   mininum number
-   * @param  {Number} max   maxinum number
+   * @param  {Number} min   minimum number
+   * @param  {Number} max   maximum number
    * @param  {Number} amount
    * @return {Array} Random Number Array
    *
@@ -81,8 +81,8 @@ module.exports = {
   },
   /**
    * product `amount` random numbers between `min` and `max`, list at desc order.
-   * @param  {Number} min   mininum number
-   * @param  {Number} max   maxinum number
+   * @param  {Number} min   minimum number
+   * @param  {Number} max   maximum number
    * @param  {Number} amount
    * @return {Array}
    *
@@ -124,8 +124,8 @@ module.exports = {
   },
   /**
    * product `amount` random numbers between `min` and `max`, list at esc order.
-   * @param  {Number} min   mininum number
-   * @param  {Number} max   maxinum number
+   * @param  {Number} min   minimum number
+   * @param  {Number} max   maximum number
    * @param  {Number} amount
    * @return {Array}
    *
