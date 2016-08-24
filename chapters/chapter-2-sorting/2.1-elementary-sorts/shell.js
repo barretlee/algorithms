@@ -14,10 +14,11 @@ function shell(input) {
   }
   while(h >= 1) {
     for(var i = h; i < len; i++)  {
-      for(var j = i; j >= h; j -= h) {
-        if(input[j] < input[j - h]) {
-          input[j] = [input[j - h], input[j - h] = input[j]][0];
-        }
+      var j = i;
+      var insertion = input[j];
+      while (j > 0 && insertion < input[j-h]) {
+        input[j] = input[j-h];
+        j -= h;
       }
     }
     h = Math.floor(h / 3);
