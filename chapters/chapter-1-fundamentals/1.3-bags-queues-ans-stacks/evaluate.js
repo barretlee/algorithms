@@ -27,7 +27,7 @@ function evaluate(input) {
         var a = valStack.pop();
         var b = valStack.pop();
         var opt = optStack.pop();
-        valStack.push(eval(a + opt + b));
+        valStack.push(eval(b + opt + a));
         break;
       default:
         valStack.push(item);
