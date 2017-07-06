@@ -11,9 +11,10 @@ console.log('> input: ' + input);
 function threeSumFast(input) {
   var counter = 0;
   for(var i = 0, len = input.length; i < len - 2; i++) {
-    for(var j = i; j < len - 1; j++) {
+    for(var j = i + 1; j < len - 1; j++) {
       var searchKey = -1 * (input[i] + input[j]);
-      if(rank(input, searchKey) > -1) {
+      var key = rank(input, searchKey)
+      if(key > -1 && key > i && key > j) {
         counter++;
       }
     }

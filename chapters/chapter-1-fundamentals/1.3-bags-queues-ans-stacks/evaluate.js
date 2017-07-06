@@ -1,6 +1,6 @@
 console.log('evaluate:')
 /* input start */
-var input = '( 1 + ( ( 2 + 3 ) * ( 4 + 5 ) )';
+var input = '( 1 + ( ( 2 + 3 ) * ( 4 + 5 ) ) )';
 input = input.replace(/\s/g, '').split('');
 /* input end */
 console.log('> input: ' + input.join(' '));
@@ -27,7 +27,7 @@ function evaluate(input) {
         var a = valStack.pop();
         var b = valStack.pop();
         var opt = optStack.pop();
-        valStack.push(eval(a + opt + b));
+        valStack.push(eval(b + opt + a));
         break;
       default:
         valStack.push(item);

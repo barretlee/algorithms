@@ -12,7 +12,8 @@ function twoSumFast(input) {
   var counter = 0;
   for(var i = 0, len = input.length; i < len - 1; i++) {
     var searchKey = -1 * input[i];
-    if(rank(input, searchKey) > -1) {
+    // 排除重复
+    if(rank(input, searchKey) > -1 && input[i] < 0) {
       counter++;
     }
   }

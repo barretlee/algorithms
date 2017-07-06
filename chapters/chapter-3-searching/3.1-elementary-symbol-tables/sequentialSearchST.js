@@ -1,8 +1,8 @@
-// console.log('sequentialSearchST:')
+console.log('sequentialSearchST:')
 /* input start */
-// var input = require('../../../generator/index').getRandomNumbers();
+var input = require('../../../generator/index').getRandomNumbers();
 /* input end */
-// console.log('> input: ' + input);
+console.log('> input: ' + input);
 
 
 // sequentialSearchST
@@ -11,7 +11,10 @@ function sequentialSearchST() {
   function Node(key, val, next) {
     this.key = key;
     this.val = val;
+    this.next = next;
   }
+
+  var first = null;
 
   return {
     links: null,
@@ -32,6 +35,7 @@ function sequentialSearchST() {
         n.next = l;
         this.links = n;
       }
+      return null;
     },
     findWhere: function(where) {
       var l = this.links;
@@ -49,6 +53,28 @@ function sequentialSearchST() {
     }
   }
 }
+
+// function frequencyCounter(input) {
+
+//     var st = new SequentialSearchST();
+//     var minLen = 1;
+
+//     for (var i=0; i < input.split(' ').length; i++) {
+//       var word = input.split(' ')[i];
+//       if (word.length < minLen) continue;
+//       if (!st.contains(word)) st.put(word, 1);
+//       else st.put(word, st.get(word) + 1);
+//     }
+
+//     max = '';
+//     st.put(max, 0);
+//     st.keys().forEach(function(word) {
+//       if (st.get(word) > st.get(max)) max = word;
+//     })
+
+//     output = max + ' ' + st.get(max);
+//     return output
+// }
 
 
 var st = new sequentialSearchST();
@@ -81,6 +107,5 @@ console.log(JSON.stringify(st.links, null, 2));
 console.log(st.findWhere({key: 'b'}));
 
 /* output start */
-// console.log('> output: ' + sequentialSearchST(input));
+console.log('> output: ' + sequentialSearchST(input));
 /* output end */
-
